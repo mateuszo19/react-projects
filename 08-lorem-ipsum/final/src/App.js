@@ -23,6 +23,8 @@ function App() {
         <input
           type='number'
           name='amount'
+          min=1
+          max={data.length - 1}
           id='amount'
           value={count}
           onChange={(e) => setCount(e.target.value)}
